@@ -4,6 +4,7 @@ import Lf from "./Lifecycle";
 import Eh from "./Eventhandle";
 import Form from "./form";
 
+
 const App = (props) => {
   const myele =<div>
      <h1> hello {props.topic}</h1>
@@ -36,8 +37,8 @@ class Reactstate extends React.Component{
   render(){
     return (
     <div>
-    <Form/>
-     
+  
+     <Site/>
      
       </div>
       )
