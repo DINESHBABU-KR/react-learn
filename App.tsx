@@ -5,7 +5,7 @@ import Eh from "./Eventhandle";
 import Form from "./form";
 import List from "./list";
 import Hook from "./hook";
-import Rout from "./router"
+import DI from "./router"
 
 
 const App = (props) => {
@@ -38,12 +38,14 @@ class Reactstate extends React.Component{
     this.setState({init:"thank  for you"});
   }
   arr=[1,2,3,4,5,6,7,"return"]
+
+
   render(){
     return (
     <div>
   
   
-   <Rout/>
+   <DI/>
      
       </div>
       )

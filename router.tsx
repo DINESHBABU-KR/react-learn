@@ -1,5 +1,6 @@
 import * as React from 'react';
-import ReactDOM from 'react-dom/client';
+
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 import Home from "./routehome";
 import About from "./routeabout";
@@ -9,16 +10,17 @@ function Rout()
 {
   return(
    
-    <BrowserRouter>
+    <Router>
       <Routes>
     <Route path="/" component={Home}/>
     <Route path="about" component={About}/>
     <Route path="join" component={Join}/>
     </Routes>
-    </BrowserRouter>
+   </Router>
   );
 }
 function  RR(){
+  return(
   <Router>
            <div>
             <ul>
@@ -39,7 +41,9 @@ function  RR(){
           </Routes>
           </div>
        </Router>
+  )
 
 }
 export default RR;
+
 
